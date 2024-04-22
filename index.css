@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Roboto", serif;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+}
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr; /* One column for the header */
+    grid-template-rows: auto; /* Let the row size adjust based on content */
+    margin: auto;
+}
+
+.diamond {
+    display: grid;
+    grid-template-columns: repeat(2, 40vmin);
+    grid-template-rows: repeat(2, 40vmin);
+}
+
+.segment {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+
+.cyan {
+    background: #028787;
+    transition: all 0.5s ease-in;
+    clip-path: polygon(0 0, 50% 50%, 100% 100%, 0% 100%);
+
+}
+.purple {
+    background: #400189;
+    transition: all 0.5s ease-in;
+    clip-path: polygon(0 0, 100% 0, 50% 50%, 0% 100%);
+
+    
+}
+.blue {
+    background: #6699FF;
+    transition: all 0.5s ease-in;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0% 100%);
+}
+.green {
+    background: #006a23;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 50%);
+
+}
+
+.about{
+    background-image: url('./images/about.png');
+    background-size: 50%;
+    position: relative;
+    background-position: top left;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease-in, clip-path 0.25s ease-out;
+}
+
+.stack{
+    background-image: url('./images/stack.png');
+    background-size: 50%;
+    position: relative;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease-in, clip-path 0.25s ease-out;;
+}
+
+.projects{
+    background-image: url('./images/projects.png');
+    background-size: 50%;
+    position: relative;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease-in, clip-path 0.25s ease-out;;
+}
+
+.contact{
+    background-image: url('./images/contact.png');
+    background-size: 46%;
+    position: relative;  
+    background-position: top right;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s ease-in, clip-path 0.25s ease-out;;
+    
+}
+
+.purple:hover, .cyan:hover, .green:hover, .blue:hover{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: .25vmin solid rgba(80, 135, 253, 0.9);
+} 
+
+.about:hover{
+    background-image: url('./images/about.png');
+    background-size: 50%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.stack:hover{
+    background-image: url('./images/stack.png');
+    background-size: 50%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.projects:hover{
+    background-image: url('./images/projects.png');
+    background-size: 50%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.contact:hover{
+    background-image: url('./images/contact.png');
+    background-size: 46%;
+    position: relative;  
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+
+.preload * {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
+
+  .white{
+    color: white;
+  }
+
+  .cardText {
+    visibility: hidden;
+}
+
+.about:hover .cardText{
+    visibility: visible;
+}
+
+.projects:hover .cardText{
+    visibility: visible;
+}
+
+.stack:hover .cardText{
+    visibility: visible;
+}
+
+.contact:hover .cardText{
+    visibility: visible;
+}

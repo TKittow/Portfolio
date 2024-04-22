@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(31, 31, 31);
+    background: linear-gradient(45deg, rgba(16,15,36,1) 0%, rgba(9,9,121,1), rgba(16,15,36,1) 73%);
+    margin: 3vmin 10vmin;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.backButton{
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+    margin: 20px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 999;
+    
+}
+
+.backButton:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .white {
+    color: white;
+  }
+
+  h1{
+    text-align: center;
+  }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<title>Portfolio Loading Screen</title>
+</head>
+<body class="preload">
+  <h1 class="header white bold">Toby Kittow</h1>
+  <h4 class="header white bold">Software Developer</h6>
+  <div class="diamond">
+    <div onclick=continueToProjects() class="segment projects blue">
+      <h1 class="cardText">Projects</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="cardText">All the projects I have worked on</p>
+    </div>
+    <div onclick=continueToStack() class="segment stack cyan">
+      <h1 class="cardText">Stack</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="cardText">The list of technologies I have used</p>
+    </div>
+    <div onclick=continueToContact() class="segment contact green">
+      <h1 class="cardText">Contact</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="cardText">How to get in touch</p>
+    </div>
+    <div onclick=continueToAbout() class="segment about purple">
+      <h1 class="cardText">About</h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class="cardText">Previous experience and about me</p>
+    </div>
+  </div>
+
+<script>
+function continueToProjects() {
+  window.location.href = "./projects.html";
+}
+function continueToAbout() {
+  window.location.href = "./about.html";
+}
+function continueToStack() {
+  window.location.href = "./stack.html";
+}
+function continueToContact() {
+  window.location.href = "./contact.html";
+}
+setTimeout(() => {
+  document.querySelectorAll(".preload").forEach(element => {
+    element.classList.remove("preload");
+  });
+}, 200);
+
+</script>
+</body>
+</html>

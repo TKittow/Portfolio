@@ -1,0 +1,90 @@
+body{
+    background-color: rgb(31, 31, 31);
+    background: linear-gradient(45deg, rgba(16,15,36,1) 0%, rgba(9,9,121,1), rgba(16,15,36,1) 73%);
+    margin: 3vmin 10vmin;
+    font-family: "Roboto", sans-serif;
+}
+.backButton{
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+    margin: 20px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 999;
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: 900;
+    
+}
+
+.backButton:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .white {
+    color: white;
+  }
+
+  h1{
+    text-align: center;
+    font-size: 72px;
+  }
+
+  .projectContainer{
+    margin: auto;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 140vmin;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+  .projectCard {
+    position: relative; /* Set the positioning context for the .cardTitle */
+    display: grid;
+    margin: 0 auto 6vmin;
+    height: 30vmin;
+    width: 60vmin;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+    transition: ease-in 0.2s;
+}
+
+.projectCard:hover {
+    transform: scale(1.1);
+}
+
+.cardTitle {
+    position: absolute; /* Position the .cardTitle relative to the .projectCard */
+    top: 10px; /* Adjust top position as needed */
+    left: 10px; /* Adjust right position as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Solid background color */
+    color: white; /* Text color */
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Ensure the .cardTitle stays above other content */
+}
+
+.cardInfo {
+    position: absolute; /* Position the .cardTitle relative to the .projectCard */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Solid background color */
+    color: white; /* Text color */
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Ensure the .cardTitle stays above other content */
+}
