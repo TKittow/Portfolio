@@ -1,10 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Garamond);
+
 body{
     background-color: rgb(31, 31, 31);
     background: linear-gradient(45deg, rgba(16,15,36,1) 0%, rgba(9,9,121,1), rgba(16,15,36,1) 73%);
     margin: 3vmin 10vmin;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    height: 95vh;
+    color: white;
 }
 .backButton{
     text-decoration: none;
@@ -19,6 +21,8 @@ body{
         top: 20px;
         left: 20px;
         z-index: 999;
+        font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-weight: 900;
     
 }
 
@@ -33,4 +37,163 @@ body{
 
   h1{
     text-align: center;
+    font-size: 72px;
+  }
+
+  .projectContainer{
+    margin: auto;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 140vmin;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+  .projectCard {
+    position: relative; /* Set the positioning context for the .cardTitle */
+    display: grid;
+    margin: 0 auto 6vmin;
+    height: 30vmin;
+    width: 60vmin;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+    transition: ease-in 0.2s;
+}
+
+.projectCard:hover {
+    transform: scale(1.1);
+}
+
+.cardTitle {
+    position: absolute; /* Position the .cardTitle relative to the .projectCard */
+    top: 10px; /* Adjust top position as needed */
+    left: 10px; /* Adjust right position as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Solid background color */
+    color: white; /* Text color */
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Ensure the .cardTitle stays above other content */
+}
+
+.cardInfo {
+    position: absolute; /* Position the .cardTitle relative to the .projectCard */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Solid background color */
+    color: white; /* Text color */
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1; /* Ensure the .cardTitle stays above other content */
+}
+
+.section{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 100vmin;
+    margin: 0 auto;
+}
+
+.techStack{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2px;
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 20px;
+    margin: 10px auto 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100vmin;
+    flex-wrap: wrap;
+}
+
+.tech{
+    width: 10vmin;
+}
+
+i{
+    font-size: 68px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.card {
+    font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  box-sizing: inherit;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 2px rgba(0, 0, 0, .5),
+                -1px -1px 1px rgba(179, 179, 179, .5),
+                1px 1px 0 rgba(255, 255, 255, 0.55),
+                0 1px 3px white;
+  overflow: hidden;
+  color: #191919;
+  background-color: azure;
+    background-color: #f4f1eb;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+    border-radius: 1px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 70vmin;
+    height: 45vmin;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+
+.cardNumber{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.left {
+    float: left;
+  }
+
+  .big {
+    font-size: 150%;
+  }
+  
+  .med {
+    font-size: 100%;
+    letter-spacing: .5px;
+  }
+  
+  .small {
+    font-size: 65%;
+    letter-spacing: .5px;
+  }
+
+  .row {
+    display: block;
+    text-align: center;
+  }
+
+  .row:nth-child(2) {
+    margin: 140px 0 160px 0;
+  }
+
+  p{
+    margin: 0;
   }
