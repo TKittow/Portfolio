@@ -3,10 +3,12 @@
 body{
     background-color: rgb(31, 31, 31);
     background: linear-gradient(45deg, rgba(16,15,36,1) 0%, rgba(9,9,121,1), rgba(16,15,36,1) 73%);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 3vmin 10vmin;
     font-family: "Roboto", sans-serif;
-    height: 95vh;
     color: white;
+    min-height: 100vh;
 }
 .backButton{
     text-decoration: none;
@@ -119,6 +121,13 @@ body{
 .tech{
     width: 10vmin;
 }
+.tech:hover, .techPlus:hover{
+    transform: scale(1.1);
+}
+
+.tech:hover > p, .techPlus:hover > p{
+    transform: scale(1.4);
+}
 
 i{
     font-size: 68px;
@@ -196,4 +205,25 @@ i{
 
   p{
     margin: 0;
+  }
+
+  .techStack{
+    gap: 40px;
+    padding: 10vmin;
+  }
+
+  .aboutText{
+    text-align: left;
+  }
+
+  .padded{
+    padding: 20px 40px 40px 40px;
+  }
+
+  .profileImage{
+    width: 40vmin;
+    margin: 0 auto;
+    align-self: center;
+    display: block;
+    border-radius: 25%;
   }
