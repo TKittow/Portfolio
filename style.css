@@ -138,6 +138,7 @@ i{
     justify-content: center;
     align-items: center;
     color: #333;
+    margin: 13% auto auto auto;
 }
 
 .card {
@@ -200,7 +201,7 @@ i{
   }
 
   .row:nth-child(2) {
-    margin: 140px 0 160px 0;
+    margin: 20% 0 25% 0;
   }
 
   p{
@@ -226,4 +227,19 @@ i{
     align-self: center;
     display: block;
     border-radius: 25%;
+  }
+
+  .linkedin{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: black;
+    font-size: 350%;
+    cursor: pointer;
+  }
+
+  a.linkedin{
+    width: 10%;
+    height: 15%;
+    z-index: 1;
   }

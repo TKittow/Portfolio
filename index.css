@@ -41,6 +41,9 @@ body {
     padding: 20px;
     text-align: center;
     transition: all 0.5s ease-in;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 3fr auto;
 }
 
 .cyan {
