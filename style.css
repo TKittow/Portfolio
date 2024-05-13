@@ -243,3 +243,20 @@ i{
     height: 15%;
     z-index: 1;
   }
+
+  @media only screen and (max-width: 1024px) {
+    .techStack{
+      width: 60%;
+    }
+    .profileImage{
+      width: 20vmin;
+      margin: 0 auto;
+      align-self: center;
+      display: block;
+      border-radius: 25%;
+    }
+
+    .section{
+      width: 60%;
+    }
+  }

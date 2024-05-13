@@ -186,3 +186,130 @@ body {
 .contact:hover .cardText{
     visibility: visible;
 }
+
+/* For screens smaller than 1024px (iPad portrait mode) */
+@media only screen and (max-width: 1024px) {
+    .diamond {
+        grid-template-columns: repeat(2, 40vmin);
+        grid-template-rows: repeat(2, 40vmin);
+    }
+
+    .segment {
+        padding: 15px;
+    }
+
+    .about, .stack, .projects, .contact {
+        background-size: 40%;
+    }
+    .purple, .cyan, .green, .blue{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        border: .25vmin solid rgba(80, 135, 253, 0.9);
+    } 
+    .about{
+        background-image: url('./images/about.png');
+        background-size: 50%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    
+    .stack{
+        background-image: url('./images/stack.png');
+        background-size: 50%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    
+    .projects{
+        background-image: url('./images/projects.png');
+        background-size: 50%;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    
+    .contact{
+        background-image: url('./images/contact.png');
+        background-size: 46%;
+        position: relative;  
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        
+    }
+    .about .cardText{
+        visibility: visible;
+    }
+    
+    .projects .cardText{
+        visibility: visible;
+    }
+    
+    .stack .cardText{
+        visibility: visible;
+    }
+    
+    .contact .cardText{
+        visibility: visible;
+    }
+}
+
+/* For screens larger than 1024px (iPad landscape mode and larger) */
+@media only screen and (min-width: 1024px) {
+    .diamond {
+        grid-template-columns: repeat(2, 40vmin);
+        grid-template-rows: repeat(2, 40vmin);
+    }
+
+    .segment {
+        padding: 20px;
+    }
+
+    .about, .stack, .projects, .contact {
+        background-size: 50%;
+    }
+}
+
+/* For screens smaller than 650px (iPhone portrait mode) */
+@media only screen and (max-width: 650px) {
+    body{
+        display: grid;
+        grid-template-rows: 2fr 0.5fr 10fr;
+    }
+    .diamond {
+        grid-template-columns: repeat(1, 80vmin);
+        grid-template-rows: repeat(4, 20%);
+    }
+
+    .segment {
+        padding: 10px;
+    }
+
+    .about, .stack, .projects, .contact {
+        background-size: 20%;
+        background-position: left;
+    }
+    .contact p.cardText, .about p.cardText, .stack p.cardText, .projects p.cardText{
+        font-size: 0.75em;
+    }
+    
+    .contact h1.cardText, .about h1.cardText, .stack h1.cardText, .projects h1.cardText{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .purple, .cyan, .green, .blue{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    
+    .top{
+        font-size: 0.5em;
+        display: flex;
+        margin: auto;
+        
+    }
+}

@@ -151,3 +151,30 @@ img {
     margin-bottom: 10px; /* Add some spacing between each bullet point */
     text-align: center; /* Align text to the left */
 }
+
+@media only screen and (max-width: 1024px) {
+
+    .section{
+      width: 60%;
+    }
+    .tech{
+        font-size: 11px;
+    }
+    h3{
+        font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+
+    .tech{
+        font-size: 6px;
+    }
+
+    .fa-brands{
+        font-size: 30px;
+    }
+    .devicon{
+        font-size: 30px;
+    }
+  }

@@ -1,8 +1,10 @@
 body{
     background-color: rgb(31, 31, 31);
     background: linear-gradient(45deg, rgba(16,15,36,1) 0%, rgba(9,9,121,1), rgba(16,15,36,1) 73%);
-    margin: 3vmin 10vmin;
+    margin: 3vmin auto;
     font-family: "Roboto", sans-serif;
+    display: grid;
+    height: 100vh;
 }
 .backButton{
     text-decoration: none;
@@ -37,7 +39,7 @@ body{
   }
 
   .projectContainer{
-    margin: auto;
+    margin: auto; /* causing it to be centered - fix this for relative */
     /* border: 2px solid red; */
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -48,11 +50,15 @@ body{
     
   }
 
+  .projectContainer > a{
+    margin: 0 auto;
+
+  }
 
   .projectCard {
     position: relative; /* Set the positioning context for the .cardTitle */
     display: grid;
-    margin: 0 auto 6vmin;
+    margin: 0 0 6vmin;
     height: 30vmin;
     width: 60vmin;
     border-radius: 50px;
@@ -88,4 +94,20 @@ body{
     padding: 5px 10px; /* Add padding for better readability */
     border-radius: 5px; /* Rounded corners */
     z-index: 1; /* Ensure the .cardTitle stays above other content */
+}
+
+/* For screens smaller than 650px (iPhone portrait mode) */
+@media only screen and (max-width: 1024px) {
+  .projectContainer{
+    margin: auto;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr ;
+    width: 100vmin;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
 }
